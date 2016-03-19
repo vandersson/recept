@@ -1,0 +1,32 @@
+span.title {
+    font-family: sans-serif;
+    font-size: 3em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+header svg {
+    height: 2.5em;
+    width: 4em;
+    vertical-align: text-bottom;
+}
+
+header.top {
+    padding-left: 1em;
+    background-color: black;
+}
+
+header.top span.title {
+    margin: 0;
+    padding: 0.2em;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+}

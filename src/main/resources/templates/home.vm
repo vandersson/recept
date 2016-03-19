@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/home.css"/>
+    <link rel="stylesheet" type="text/css" href="/common.css"/>
+    <script src="/home.js"></script>
+    <title>Recept</title>
+</head>
+<body>
+<header>
+    #set($color = "#000000")
+    #parse("kastrull.vm")
+    <span class="title">Recept</span>
+</header>
+<main>
+    <section>
+        <form>
+            <div id="search" class="search">
+
+                <input id="searchInput" type="search" value="Søk"
+                       onfocus='if (value=="Søk") {value = "";}'
+                       onblur='if (value=="") {value ="Søk";}'
+                       onkeyup="getSuggestions(this.value)"/>
+
+                <div id="searchSugestion" class="sugestion">
+                    <ul id="searchSugestionList">
+                    </ul>
+                </div>
+
+            </div>
+        </form>
+    </section>
+</main>
+<script>
+    document.getElementById("searchInput").focus();
+</script>
+</body>
+</html>
